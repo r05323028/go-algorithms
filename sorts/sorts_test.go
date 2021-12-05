@@ -16,6 +16,11 @@ func runTestCases(t *testing.T, sortFunc func([]int) []int) {
 			expected: []int{1, 2, 3, 4},
 			name:     "Simple",
 		},
+		{
+			input:    []int{1, 4, 2, 3, 2},
+			expected: []int{1, 2, 2, 3, 4},
+			name:     "Has Duplicates",
+		},
 	}
 
 	for _, test := range testCases {
@@ -29,4 +34,8 @@ func runTestCases(t *testing.T, sortFunc func([]int) []int) {
 
 func TestMergeSort(t *testing.T) {
 	runTestCases(t, MergeSort)
+}
+
+func TestInsertionSort(t *testing.T) {
+	runTestCases(t, InsertionSort)
 }
