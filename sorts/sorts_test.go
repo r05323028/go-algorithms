@@ -21,6 +21,21 @@ func runTestCases(t *testing.T, sortFunc func([]int) []int) {
 			expected: []int{1, 2, 2, 3, 4},
 			name:     "Has Duplicates",
 		},
+		{
+			input:    []int{},
+			expected: []int{},
+			name:     "Empty Slice",
+		},
+		{
+			input:    []int{1},
+			expected: []int{1},
+			name:     "Only One Element",
+		},
+		{
+			input:    []int{1, 0, -1},
+			expected: []int{-1, 0, 1},
+			name:     "Has Negatives",
+		},
 	}
 
 	for _, test := range testCases {
