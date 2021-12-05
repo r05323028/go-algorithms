@@ -58,3 +58,7 @@ func TestInsertionSort(t *testing.T) {
 func TestBubbleSort(t *testing.T) {
 	runTestCases(t, BubbleSort)
 }
+
+func TestQuickSort(t *testing.T) {
+	runTestCases(t, QuickSort)
+}
