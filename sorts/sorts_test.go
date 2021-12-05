@@ -39,3 +39,7 @@ func TestMergeSort(t *testing.T) {
 func TestInsertionSort(t *testing.T) {
 	runTestCases(t, InsertionSort)
 }
+
+func TestBubbleSort(t *testing.T) {
+	runTestCases(t, BubbleSort)
+}
