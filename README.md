@@ -4,3 +4,12 @@
 ![GitHub](https://img.shields.io/github/license/r05323028/go-algorithms)
 
 My algorithm practices in Go.
+
+
+# Copyright
+
+Copyright © Sean Chang. All Rights Reserved.
+
+# License
+
+[MIT](./LICENSE)
