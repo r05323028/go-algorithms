@@ -1,4 +1,4 @@
-package sorts
+package sort
 
 func BubbleSort(arr []int) []int {
 	swap := true
