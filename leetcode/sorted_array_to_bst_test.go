@@ -5,6 +5,19 @@ import (
 	"testing"
 )
 
+func TestLevelOrder(t *testing.T) {
+	root := &TreeNode{Val: 0}
+	root.Left = &TreeNode{Val: -3}
+	root.Right = &TreeNode{Val: 9}
+
+	actual := LevelOrder(root)
+	expected := []int{0, -3, 9}
+	equal := reflect.DeepEqual(actual, expected)
+	if !equal {
+		t.Errorf("Actual: %v != Expected: %v", actual, expected)
+	}
+}
+
 func TestSortedArrayToBST(t *testing.T) {
 	testCases := []struct {
 		input    []int
